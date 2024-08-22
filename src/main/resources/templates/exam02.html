@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form th:action="@{/exam02/calculate}" method="post">
+        <h1>数字を入れてください。</h1><br>
+        <input type="text" name="num1" id="">
+        <label for="">+</label>
+        <input type="text" name="num2" id="">
+        <label for="">=</label><br>
+        <span></span>
+        <button class="button">足し算をする</button>
+    </form>
+</body>
+</html>
